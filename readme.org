@@ -1,0 +1,12 @@
+* ALM014 FIZZLE GUTS
+
+** INTRODUCTION
+
+** Building
+
+*** MAC
+
+brew tap osx-cross/avr
+brew install avr-gcc
+brew install avrdude
+
