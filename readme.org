@@ -2,11 +2,45 @@
 
 ** INTRODUCTION
 
-** Building
+[[alm014.png]]
 
-*** MAC
+The ALM Busy Circuits 'Fizzle guts' is a Eurorack dual low pass filter
+and VCA that uses a 'donor' filter MB87186 IC from a Casio FZ1
+synth. It was originally deisgned back in 2014. Only approx 30 of the
+original units exist. With no plans to make anymore we have open
+sourced the code, pcb design files (eagle) and a basic panel design so
+others can make there own and add customitions and improvements.
 
+A built module features two filter cores A & B with voltage and direct
+controlled resonance and cut off as well as a 'DCA' (a digital
+controlled vca). There is also a mix output. Expect a wierd murky
+sounding filter which when modulated right can really squelch up nice.
+
+You will need a donor 'MB87186' IC desolded from a real FZ1 or FZ1M
+synth. They each contain 4 and the IC is usually marked 'FM1' with a
+date code below. The IC then connects to the DIL socket on the rear of
+the module.
+
+For more information on the MB87186 (and from what alot of the code
+was based on) See http://www.buchty.net/casio/dcf.html
+
+*If you build and sell units please rename the module and avoid using our trademarks (ALM) !*
+
+*EVERYTHING IS PROVIDED AS IS. WE ARE UNABLE PROVIDE ANY SUPPORT FOR THE FIZZLE*
+
+** Building and flashing the firmware
+
+You'll need a basic 'usbtiny' AVR programmer.
+
+You'll need to install avr-gcc and avrdude.
+
+(Om mac..)
+#+BEGIN_SRC
 brew tap osx-cross/avr
 brew install avr-gcc
 brew install avrdude
+#+END_SRC
 
+Type 'make' in the /firmare/ directory to make the source code and
+then run './flash.sh' (with your programmer connected) to program the
+Fizzle.
