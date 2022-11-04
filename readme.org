@@ -6,16 +6,17 @@
 
 The ALM Busy Circuits 'Fizzle guts' is a Eurorack dual low pass filter
 and VCA that uses a 'donor' filter MB87186 chip from a Casio FZ1
-synth. It was originally designed in 2014 and only approx 30 of the
-original units exist. With no plans to make anymore, we have open
-sourced the pcb design files (eagle), avr microcontroller code and a
-basic panel design so others can make there own and add
-customisation's and/or improvements. 
+sampler. It was originally designed in 2014 as a fun side project and
+only approx 30 of the original units were made. With no plans to make
+any more, we have open sourced the pcb design files (eagle), avr
+microcontroller code and a basic panel design so others can make there
+own and add customisations and/or improvements.
 
 A built module features two filter cores A & B with voltage and direct
 controlled resonance and cut off as well as a 'DCA' (a digital
 controlled vca). There is also a mix output. Expect a weird murky
-sounding filter which when modulated right can really squelch up nice.
+sounding filter which can squeek and blip when modulated but can
+really squelch up nice.
 
 You will need a donor 'MB87186' IC desolded from a real FZ1 or FZ1M
 synth. They each contain 4 and the IC is usually marked 'FM1' with a
@@ -23,7 +24,7 @@ date code below. The IC then connects to the DIL socket on the rear of
 the module.
 
 For more information on the MB87186 (and from what much of the code
-was based on) See http://www.buchty.net/casio/dcf.html
+was based on) see http://www.buchty.net/casio/dcf.html
 
 *PLEASE NOTE EVERYTHING IS PROVIDED AS IS. WE ARE UNABLE PROVIDE ANY SUPPORT TO ANYONE ATTEMPTING TO USE THESE FILES*
 
